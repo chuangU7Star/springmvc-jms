@@ -10,7 +10,7 @@
     <!-- Context ConfigLocation -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:/spring-mvc-jms.xml</param-value>
+        <param-value>classpath*:/spring-mvc-jms.xml,classpath*:/spring-mvc-websocket.xml,classpath*:/applicationContext.xml</param-value>
     </context-param>
     <listener>
         <listener-class>com.liuvenking.springintejms.listener.WebContextListener</listener-class>
